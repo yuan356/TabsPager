@@ -1,7 +1,7 @@
 # TabsPager
 Quick setup pager with scrollable tabs
 
-<img src="./Example/Source/TabsPagerDemo.gif" alt="demo" width="220"/>
+<img src="./Example/Source/demo.gif" alt="demo" width="220"/>
 
 
 ## Requirements
