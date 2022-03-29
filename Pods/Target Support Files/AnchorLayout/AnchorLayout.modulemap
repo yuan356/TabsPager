@@ -1,0 +1,6 @@
+framework module AnchorLayout {
+  umbrella header "AnchorLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

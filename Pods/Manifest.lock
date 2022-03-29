@@ -1,0 +1,16 @@
+PODS:
+  - AnchorLayout (0.0.1)
+
+DEPENDENCIES:
+  - AnchorLayout (~> 0.0.1)
+
+SPEC REPOS:
+  trunk:
+    - AnchorLayout
+
+SPEC CHECKSUMS:
+  AnchorLayout: eb962aa298c79622cd8bb9ed9786e22ffa5be682
+
+PODFILE CHECKSUM: 1093042da5a136c591ae549c88c97992c5bdf7c7
+
+COCOAPODS: 1.10.2
