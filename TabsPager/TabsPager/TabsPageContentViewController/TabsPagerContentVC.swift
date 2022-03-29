@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class TabPagerContentVC: UIViewController {
+open class TabsPagerContentVC: UIViewController {
     
     // Title on tabs
     public var tabTitle: String = ""

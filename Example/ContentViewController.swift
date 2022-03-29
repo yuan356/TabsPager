@@ -8,7 +8,7 @@
 import UIKit
 import TabsPager
 
-class ContentViewController: TabPagerContentVC {
+class ContentViewController: TabsPagerContentVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

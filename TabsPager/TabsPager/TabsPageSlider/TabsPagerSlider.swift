@@ -9,7 +9,7 @@
 import UIKit
 import AnchorLayout
 
-class TabPageSlider {
+class TabsPagerSlider {
                 
     var slider = UIView()
     

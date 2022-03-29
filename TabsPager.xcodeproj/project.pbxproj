@@ -13,10 +13,10 @@
 		BEC7840127F2B8090070894A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7840027F2B8090070894A /* ViewController.swift */; };
 		BEC7840627F2B80A0070894A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC7840527F2B80A0070894A /* Assets.xcassets */; };
 		BEC7840927F2B80A0070894A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC7840727F2B80A0070894A /* LaunchScreen.storyboard */; };
-		BEC7841927F2B82C0070894A /* TabContainerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841027F2B82C0070894A /* TabContainerPageViewController.swift */; };
-		BEC7841A27F2B82C0070894A /* TabPagerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841227F2B82C0070894A /* TabPagerContentVC.swift */; };
+		BEC7841927F2B82C0070894A /* TabsPagerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841027F2B82C0070894A /* TabsPagerContainerViewController.swift */; };
+		BEC7841A27F2B82C0070894A /* TabsPagerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841227F2B82C0070894A /* TabsPagerContentVC.swift */; };
 		BEC7841B27F2B82C0070894A /* TabsPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841327F2B82C0070894A /* TabsPager.swift */; };
-		BEC7841C27F2B82C0070894A /* TabPageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841527F2B82C0070894A /* TabPageSlider.swift */; };
+		BEC7841C27F2B82C0070894A /* TabsPagerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841527F2B82C0070894A /* TabsPagerSlider.swift */; };
 		BEC7841D27F2B82C0070894A /* TabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC7841727F2B82C0070894A /* TabCell.xib */; };
 		BEC7841E27F2B82C0070894A /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841827F2B82C0070894A /* TabCell.swift */; };
 		BEC7842127F2B8320070894A /* UICollectionView+reuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7842027F2B8320070894A /* UICollectionView+reuseCell.swift */; };
@@ -63,10 +63,10 @@
 		BEC7840527F2B80A0070894A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC7840827F2B80A0070894A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC7840A27F2B80A0070894A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEC7841027F2B82C0070894A /* TabContainerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabContainerPageViewController.swift; sourceTree = "<group>"; };
-		BEC7841227F2B82C0070894A /* TabPagerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPagerContentVC.swift; sourceTree = "<group>"; };
+		BEC7841027F2B82C0070894A /* TabsPagerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsPagerContainerViewController.swift; sourceTree = "<group>"; };
+		BEC7841227F2B82C0070894A /* TabsPagerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsPagerContentVC.swift; sourceTree = "<group>"; };
 		BEC7841327F2B82C0070894A /* TabsPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsPager.swift; sourceTree = "<group>"; };
-		BEC7841527F2B82C0070894A /* TabPageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageSlider.swift; sourceTree = "<group>"; };
+		BEC7841527F2B82C0070894A /* TabsPagerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsPagerSlider.swift; sourceTree = "<group>"; };
 		BEC7841727F2B82C0070894A /* TabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCell.xib; sourceTree = "<group>"; };
 		BEC7841827F2B82C0070894A /* TabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
 		BEC7842027F2B8320070894A /* UICollectionView+reuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+reuseCell.swift"; sourceTree = "<group>"; };
@@ -154,36 +154,36 @@
 			isa = PBXGroup;
 			children = (
 				BEC7841327F2B82C0070894A /* TabsPager.swift */,
-				BEC7840F27F2B82C0070894A /* TabContainerPageViewController */,
-				BEC7841127F2B82C0070894A /* TabPageContentViewController */,
-				BEC7841427F2B82C0070894A /* TabPageSlider */,
+				BEC7840F27F2B82C0070894A /* TabsPagerContainerViewController */,
+				BEC7841127F2B82C0070894A /* TabsPageContentViewController */,
+				BEC7841427F2B82C0070894A /* TabsPageSlider */,
 				BEC7841627F2B82C0070894A /* TabCell */,
 			);
 			path = TabsPager;
 			sourceTree = "<group>";
 		};
-		BEC7840F27F2B82C0070894A /* TabContainerPageViewController */ = {
+		BEC7840F27F2B82C0070894A /* TabsPagerContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BEC7841027F2B82C0070894A /* TabContainerPageViewController.swift */,
+				BEC7841027F2B82C0070894A /* TabsPagerContainerViewController.swift */,
 			);
-			path = TabContainerPageViewController;
+			path = TabsPagerContainerViewController;
 			sourceTree = "<group>";
 		};
-		BEC7841127F2B82C0070894A /* TabPageContentViewController */ = {
+		BEC7841127F2B82C0070894A /* TabsPageContentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BEC7841227F2B82C0070894A /* TabPagerContentVC.swift */,
+				BEC7841227F2B82C0070894A /* TabsPagerContentVC.swift */,
 			);
-			path = TabPageContentViewController;
+			path = TabsPageContentViewController;
 			sourceTree = "<group>";
 		};
-		BEC7841427F2B82C0070894A /* TabPageSlider */ = {
+		BEC7841427F2B82C0070894A /* TabsPageSlider */ = {
 			isa = PBXGroup;
 			children = (
-				BEC7841527F2B82C0070894A /* TabPageSlider.swift */,
+				BEC7841527F2B82C0070894A /* TabsPagerSlider.swift */,
 			);
-			path = TabPageSlider;
+			path = TabsPageSlider;
 			sourceTree = "<group>";
 		};
 		BEC7841627F2B82C0070894A /* TabCell */ = {
@@ -392,11 +392,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC7841B27F2B82C0070894A /* TabsPager.swift in Sources */,
-				BEC7841C27F2B82C0070894A /* TabPageSlider.swift in Sources */,
+				BEC7841C27F2B82C0070894A /* TabsPagerSlider.swift in Sources */,
 				BEC7842127F2B8320070894A /* UICollectionView+reuseCell.swift in Sources */,
 				BEC7841E27F2B82C0070894A /* TabCell.swift in Sources */,
-				BEC7841A27F2B82C0070894A /* TabPagerContentVC.swift in Sources */,
-				BEC7841927F2B82C0070894A /* TabContainerPageViewController.swift in Sources */,
+				BEC7841A27F2B82C0070894A /* TabsPagerContentVC.swift in Sources */,
+				BEC7841927F2B82C0070894A /* TabsPagerContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

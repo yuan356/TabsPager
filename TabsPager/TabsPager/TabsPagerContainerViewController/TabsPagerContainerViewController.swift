@@ -8,16 +8,16 @@
 
 import UIKit
 
-protocol TabContainerPageDelegate: NSObject {
+protocol TabsPagerContainerDelegate: NSObject {
     func updatePage(to row: Int)
     func movingPage(ratio: CGFloat, from currentIndex: Int, to index: Int)
 }
 
-class TabContainerPageViewController: UIPageViewController {
+class TabsPagerContainerViewController: UIPageViewController {
 
     var currentIndex : Int = 0
         
-    weak var pageDelegate: TabContainerPageDelegate?
+    weak var pageDelegate: TabsPagerContainerDelegate?
     
     var scrollable = true {
         didSet {
@@ -27,7 +27,7 @@ class TabContainerPageViewController: UIPageViewController {
         }
     }
     
-    var controllers: [TabPagerContentVC] = [] {
+    var controllers: [TabsPagerContentVC] = [] {
         didSet {
             setControllersContent()
         }
@@ -60,7 +60,7 @@ class TabContainerPageViewController: UIPageViewController {
         }
     }
     
-    func contentViewController(at pageIndex: Int) -> TabPagerContentVC? {
+    func contentViewController(at pageIndex: Int) -> TabsPagerContentVC? {
         guard (0..<controllers.count) ~= pageIndex else { return nil }
         return self.controllers[pageIndex]
     }
@@ -76,7 +76,7 @@ class TabContainerPageViewController: UIPageViewController {
     }
 }
 
-extension TabContainerPageViewController: UIScrollViewDelegate {
+extension TabsPagerContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let contentOffsetX = scrollView.contentOffset.x
@@ -94,10 +94,10 @@ extension TabContainerPageViewController: UIScrollViewDelegate {
     }
 }
 
-extension TabContainerPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+extension TabsPagerContainerViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if let vc = viewController as? TabPagerContentVC {
+        if let vc = viewController as? TabsPagerContentVC {
             var pageIndex = vc.pageIndex
             pageIndex -= 1
             return contentViewController(at: pageIndex)
@@ -106,7 +106,7 @@ extension TabContainerPageViewController: UIPageViewControllerDelegate, UIPageVi
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if let vc = viewController as? TabPagerContentVC {
+        if let vc = viewController as? TabsPagerContentVC {
             var pageIndex = vc.pageIndex
             pageIndex += 1
             return contentViewController(at: pageIndex)
@@ -116,7 +116,7 @@ extension TabContainerPageViewController: UIPageViewControllerDelegate, UIPageVi
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
-            if let vc = pageViewController.viewControllers?.first as? TabPagerContentVC {
+            if let vc = pageViewController.viewControllers?.first as? TabsPagerContentVC {
                 self.currentIndex = vc.pageIndex
                 self.pageDelegate?.updatePage(to: vc.pageIndex)
             }

@@ -27,11 +27,11 @@ public class TabsPager: UIViewController {
     
     private var pageIndex: Int = 0
     
-    private var slider = TabPageSlider()
+    private var slider = TabsPagerSlider()
     
-    private var pageViewController = TabContainerPageViewController()
+    private var pageViewController = TabsPagerContainerViewController()
     
-    public var contentVCs: [TabPagerContentVC] = [] {
+    public var contentVCs: [TabsPagerContentVC] = [] {
         didSet {
             pageViewController.controllers = contentVCs
             pageViewController.currentIndex = pageIndex
@@ -174,7 +174,7 @@ public class TabsPager: UIViewController {
 }
 
 // MARK: TabContainerPageDelegate
-extension TabsPager: TabContainerPageDelegate {
+extension TabsPager: TabsPagerContainerDelegate {
     
     func updatePage(to row: Int) {
         switchTab(to: row)
