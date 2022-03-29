@@ -10,7 +10,7 @@ import TabsPager
 
 class ViewController: UIViewController {
 
-    var tabPager = TabPager()
+    var tabsPager = TabsPager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +32,11 @@ class ViewController: UIViewController {
 //        tabPager.tabTextFont = .systemFont(ofSize: 18)
         
         // 2. Add tabPage to your view
-        self.addChild(tabPager)
-        view.addSubview(tabPager.view)
-        tabPager.view.fillSuperview()
+        self.addChild(tabsPager)
+        view.addSubview(tabsPager.view)
+        tabsPager.view.fillSuperview()
         
-        // 3. Assign viewControlles
+        // 3. Set viewControlles
         setControllers()
     }
     
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             vcs.append(vc)
         }
 
-        tabPager.contentVCs = vcs
+        tabsPager.contentVCs = vcs
     }
 }
 

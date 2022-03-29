@@ -15,7 +15,7 @@
 		BEC7840927F2B80A0070894A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC7840727F2B80A0070894A /* LaunchScreen.storyboard */; };
 		BEC7841927F2B82C0070894A /* TabContainerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841027F2B82C0070894A /* TabContainerPageViewController.swift */; };
 		BEC7841A27F2B82C0070894A /* TabPagerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841227F2B82C0070894A /* TabPagerContentVC.swift */; };
-		BEC7841B27F2B82C0070894A /* TabPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841327F2B82C0070894A /* TabPager.swift */; };
+		BEC7841B27F2B82C0070894A /* TabsPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841327F2B82C0070894A /* TabsPager.swift */; };
 		BEC7841C27F2B82C0070894A /* TabPageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841527F2B82C0070894A /* TabPageSlider.swift */; };
 		BEC7841D27F2B82C0070894A /* TabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC7841727F2B82C0070894A /* TabCell.xib */; };
 		BEC7841E27F2B82C0070894A /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7841827F2B82C0070894A /* TabCell.swift */; };
@@ -65,7 +65,7 @@
 		BEC7840A27F2B80A0070894A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC7841027F2B82C0070894A /* TabContainerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabContainerPageViewController.swift; sourceTree = "<group>"; };
 		BEC7841227F2B82C0070894A /* TabPagerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPagerContentVC.swift; sourceTree = "<group>"; };
-		BEC7841327F2B82C0070894A /* TabPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPager.swift; sourceTree = "<group>"; };
+		BEC7841327F2B82C0070894A /* TabsPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsPager.swift; sourceTree = "<group>"; };
 		BEC7841527F2B82C0070894A /* TabPageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageSlider.swift; sourceTree = "<group>"; };
 		BEC7841727F2B82C0070894A /* TabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCell.xib; sourceTree = "<group>"; };
 		BEC7841827F2B82C0070894A /* TabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC7841F27F2B8320070894A /* Extension */,
-				BEC7840E27F2B82C0070894A /* TabPager */,
+				BEC7840E27F2B82C0070894A /* TabsPager */,
 				BEC783EE27F2B7EB0070894A /* TabsPager.h */,
 				BEC783EF27F2B7EB0070894A /* Info.plist */,
 			);
@@ -150,16 +150,16 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		BEC7840E27F2B82C0070894A /* TabPager */ = {
+		BEC7840E27F2B82C0070894A /* TabsPager */ = {
 			isa = PBXGroup;
 			children = (
-				BEC7841327F2B82C0070894A /* TabPager.swift */,
+				BEC7841327F2B82C0070894A /* TabsPager.swift */,
 				BEC7840F27F2B82C0070894A /* TabContainerPageViewController */,
 				BEC7841127F2B82C0070894A /* TabPageContentViewController */,
 				BEC7841427F2B82C0070894A /* TabPageSlider */,
 				BEC7841627F2B82C0070894A /* TabCell */,
 			);
-			path = TabPager;
+			path = TabsPager;
 			sourceTree = "<group>";
 		};
 		BEC7840F27F2B82C0070894A /* TabContainerPageViewController */ = {
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC7841B27F2B82C0070894A /* TabPager.swift in Sources */,
+				BEC7841B27F2B82C0070894A /* TabsPager.swift in Sources */,
 				BEC7841C27F2B82C0070894A /* TabPageSlider.swift in Sources */,
 				BEC7842127F2B8320070894A /* UICollectionView+reuseCell.swift in Sources */,
 				BEC7841E27F2B82C0070894A /* TabCell.swift in Sources */,

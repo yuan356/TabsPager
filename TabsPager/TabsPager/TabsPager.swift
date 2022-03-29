@@ -19,7 +19,7 @@ struct TabPosition {
     var cell: TabCell
 }
 
-public class TabPager: UIViewController {
+public class TabsPager: UIViewController {
     
     private var selectedTab: TabCell?
     
@@ -174,7 +174,7 @@ public class TabPager: UIViewController {
 }
 
 // MARK: TabContainerPageDelegate
-extension TabPager: TabContainerPageDelegate {
+extension TabsPager: TabContainerPageDelegate {
     
     func updatePage(to row: Int) {
         switchTab(to: row)
@@ -190,7 +190,7 @@ extension TabPager: TabContainerPageDelegate {
 
 
 // MARK: Slider
-extension TabPager {
+extension TabsPager {
     
     private func setSlider() {
         slider.sliderColor = sliderColor
@@ -207,7 +207,7 @@ extension TabPager {
 }
 
 // MARK: UICollectionViewDelegate
-extension TabPager: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension TabsPager: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contentVCs.count
