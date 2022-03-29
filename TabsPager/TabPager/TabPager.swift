@@ -10,7 +10,7 @@ import UIKit
 
 let ScreenWidth = UIScreen.main.bounds.width
 
-let systemDefaultColor = UIColor.init(red: 173/225, green: 139/225, blue: 115/225, alpha: 1.0)
+let systemDefaultColor = UIColor.init(red: 168/225, green: 133/225, blue: 88/225, alpha: 1.0)
 
 
 struct TabPosition {

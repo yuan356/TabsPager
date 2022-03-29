@@ -153,9 +153,9 @@
 		BEC7840E27F2B82C0070894A /* TabPager */ = {
 			isa = PBXGroup;
 			children = (
+				BEC7841327F2B82C0070894A /* TabPager.swift */,
 				BEC7840F27F2B82C0070894A /* TabContainerPageViewController */,
 				BEC7841127F2B82C0070894A /* TabPageContentViewController */,
-				BEC7841327F2B82C0070894A /* TabPager.swift */,
 				BEC7841427F2B82C0070894A /* TabPageSlider */,
 				BEC7841627F2B82C0070894A /* TabCell */,
 			);
