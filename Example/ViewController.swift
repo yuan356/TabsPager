@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         setTabPager()
     }
     
-    var tabs = ["Tab1", "Tab2Tab2Tab2", "Tab3", "Tab4", "Tab6", "Tab7", "Tab8"]
+    var tabs = ["Tab1", "Tab2Tab2Tab2", "Tab3", "Tab4", "Tab5", "Tab6", "Tab7"]
 
     
     private func setTabPager() {
