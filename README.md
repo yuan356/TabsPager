@@ -32,7 +32,7 @@ import TabsPager
 ```swift
 var tabsPager = TabsPager()
 ```
-2. Set TabPager attributes if you want before assign viewControllers
+2. Set TabsPager attributes if you want before assign viewControllers
 ```swift
 // change tabPager background color
 tabsPager.backgroundColor = .gray
@@ -55,7 +55,7 @@ tabsPager.sliderColor = .blue
 // change title text font in tab
 tabsPager.tabTextFont = .systemFont(ofSize: 18)
 ```
-3. Add tabPage to your view
+3. Add TabsPager to your view
 ```swift
 self.addChild(tabsPager)
 view.addSubview(tabsPager.view)
@@ -69,9 +69,7 @@ import UIKit
 import TabsPager
 
 class ContentViewController: TabPagerContentVC { }
-
 ```
-
 ```swift
 var tabs = ["Tab1", "Tab2", "Tab3"]
 var vcs: [ContentViewController] = []
